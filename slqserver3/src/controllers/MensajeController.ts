@@ -1,7 +1,6 @@
 import {Request, Response} from 'express';
 import Mensaje from '../models/MensajeModel';
 
-
 export const getMensajes =  async (req: Request, res: Response) => {
     const listMensajes = await Mensaje.findAll();
     res.json(listMensajes);
