@@ -14,10 +14,10 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(routercursos);
-app.use(routermensajes);
-app.use(routertareas);
-app.use(routerusuarios);
+app.use(routercursos, routermensajes, routertareas, routerusuarios);
+// app.use(routermensajes);
+// app.use(routertareas);
+// app.use(routerusuarios);
 
 app.listen(PORT, () => console.log(`Api conectada por el puerto ${PORT}`));
 
