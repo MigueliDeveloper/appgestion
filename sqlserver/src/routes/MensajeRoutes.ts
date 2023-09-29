@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import { deleteMensaje, getMensaje, getMensajes, postMensaje, updateMensaje} from '../controllers/MensajeController';
 
-const router = Router();
+const routermensajes = Router();
 
-router.get('/', getMensajes);
-router.get('/:id', getMensaje);
-router.delete('/:id', deleteMensaje);
-router.post('/', postMensaje);
-router.put('/:id', updateMensaje);
+routermensajes.get('/mensajes/', getMensajes);
+routermensajes.get('/mensajes/:id', getMensaje);
+routermensajes.delete('/mensajes/:id', deleteMensaje);
+routermensajes.post('/mensajes/', postMensaje);
+routermensajes.put('/mensajes/:id', updateMensaje);
 
-export default router;
+export default routermensajes;
