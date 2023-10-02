@@ -1,4 +1,4 @@
-    import { DataTypes } from 'sequelize';
+import { DataTypes } from 'sequelize';
 import db from '../config/connectdb';
 
 const Curso = db.define('Curso',{
@@ -25,4 +25,4 @@ const Curso = db.define('Curso',{
     createdAt: false,
     updatedAt: false
 });
- export default Curso;
+export default Curso;
