@@ -13,6 +13,7 @@ const Usuario = db.define('Usuario',{
     },
     email: {
         type: DataTypes.STRING,
+        unique: true
     },
     telefono: {
         type: DataTypes.STRING,
@@ -20,7 +21,7 @@ const Usuario = db.define('Usuario',{
     foto: {
         type: DataTypes.STRING,
     },
-    pass: {
+    password: {
         type: DataTypes.STRING,
     },
     tipo: {

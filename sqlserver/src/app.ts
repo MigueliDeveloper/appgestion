@@ -6,6 +6,7 @@ import routercursos from './routes/CursoRoutes';
 import routermensajes from './routes/MensajeRoutes';
 import routertareas from './routes/TareaRoutes';
 import routerusuarios from './routes/UsuarioRoutes';
+import routeradminservices from './routes/AdminServiceRoutes';
 //
 import sequelize from './config/connectdb'
 
@@ -14,7 +15,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(routercursos, routermensajes, routertareas, routerusuarios);
+app.use(routercursos, routermensajes, routertareas, routerusuarios, routeradminservices);
 // app.use(routermensajes);
 // app.use(routertareas);
 // app.use(routerusuarios);
