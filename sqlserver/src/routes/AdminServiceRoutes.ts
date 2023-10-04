@@ -3,10 +3,10 @@ import { deleteAdminService, getAdminServices, getAdminService, postAdminService
 
 
 const routeradminservice = Router();
-routeradminservice.get('/cursos/', getAdminServices);
-routeradminservice.get('/cursos/:id', getAdminService);
-routeradminservice.delete('/cursos/:id', deleteAdminService);
-routeradminservice.post('/cursos/', postAdminService);
-routeradminservice.put('/cursos/:id', updateAdminService);
+routeradminservice.get('/adminservices/', getAdminServices);
+routeradminservice.get('/adminservices/:id', getAdminService);
+routeradminservice.delete('/adminservices/:id', deleteAdminService);
+routeradminservice.post('/adminservices/', postAdminService);
+routeradminservice.put('/adminservices/:id', updateAdminService);
 
 export default routeradminservice;

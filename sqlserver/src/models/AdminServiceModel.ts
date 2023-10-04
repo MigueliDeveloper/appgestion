@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import db from '../config/connectdb';
 
-const AdminService = db.define('AdminService',{
+const AdminService = db.define('adminservice',{
     nombre: {
         type: DataTypes.STRING
     },
