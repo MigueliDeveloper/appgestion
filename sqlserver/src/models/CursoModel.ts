@@ -1,7 +1,12 @@
 import { DataTypes } from 'sequelize';
-import db from '../config/connectdb';
+import sequelize from '../db/connection';
 
-const Curso = db.define('Curso',{
+const Curso = sequelize.define('Curso',{
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
     nombre: {
         type: DataTypes.STRING
     },

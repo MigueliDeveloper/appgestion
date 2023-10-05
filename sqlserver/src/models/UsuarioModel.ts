@@ -1,7 +1,12 @@
 import { DataTypes } from 'sequelize';
-import db from '../config/connectdb';
+import sequelize from '../db/connection';
 
-const Usuario = db.define('Usuario',{
+const Usuario = sequelize.define('Usuario',{
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
     nombre: {
         type: DataTypes.STRING,
     },

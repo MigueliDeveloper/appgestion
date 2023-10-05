@@ -1,7 +1,12 @@
 import { DataTypes } from 'sequelize';
-import db from '../config/connectdb';
+import sequelize from '../db/connection';
 
-const Archivo = db.define('Archivo',{
+const Archivo = sequelize.define('Archivo',{
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
     filename:{
         type: DataTypes.STRING
 

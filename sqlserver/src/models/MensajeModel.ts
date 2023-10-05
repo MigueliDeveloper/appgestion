@@ -1,7 +1,12 @@
 import { DataTypes } from "sequelize";
-import db from '../config/connectdb';
+import sequelize from '../db/connection';
 
-const Mensaje = db.define('Mensaje', {
+const Mensaje = sequelize.define('Mensaje', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
     remite: {
         type: DataTypes.STRING,
     },
