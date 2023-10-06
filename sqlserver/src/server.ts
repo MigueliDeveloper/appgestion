@@ -39,7 +39,6 @@ class Server{
         this.app.use('/api/usuarios', routesusuarios);
         this.app.use('/api/adminservices', routesadminservices);
         this.app.use('/api/mensajes', routesmensajes);
-        this.app.use('/')
     }
 
     middlewares() {
@@ -74,9 +73,3 @@ export default Server;
 
 
 
-
-
-
-
-
-}

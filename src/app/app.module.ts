@@ -15,12 +15,13 @@ import { CrearCursosComponent } from './componentes/crear-cursos/crear-cursos.co
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { CursoComponent } from './componentes/curso/curso.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { AgregarimagenComponent } from './componentes/agregarimagen/agregarimagen.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NavbarComponent } from './componentes/navbar/navbar.component'
-import { DashboardComponent } from './componentes/dashboard/dashboard.component'
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { SignInComponent } from './componentes/sign-in/sign-in.component';
-import { SpinnerComponent } from './shared/spinner/spinner.component'
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component'
     DashboardComponent,
     LoginComponent,
     SignInComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AgregarimagenComponent
   ],
   imports: [
     BrowserModule,
