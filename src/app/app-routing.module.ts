@@ -7,11 +7,16 @@ import { CrearCursosComponent } from './componentes/crear-cursos/crear-cursos.co
 import { ListarCursosComponent } from './componentes/listar-cursos/listar-cursos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component'
 import { CursoComponent} from './componentes/curso/curso.component'
-
+import { DashboardComponent } from './componentes/dashboard/dashboard.component'
+import { LoginComponent } from './componentes/login/login.component'
+import { SignInComponent } from './componentes/sign-in/sign-in.component'
 
 const routes: Routes = [
 
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
+  {path: 'registro', component: SignInComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
   {path: 'crearcurso', component: CrearCursosComponent},
   {path: 'listarcursos', component: ListarCursosComponent},
   {path: 'editarCurso/:id', component: CrearCursosComponent},

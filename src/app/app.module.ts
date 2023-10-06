@@ -16,6 +16,11 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { CursoComponent } from './componentes/curso/curso.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './componentes/navbar/navbar.component'
+import { DashboardComponent } from './componentes/dashboard/dashboard.component'
+import { LoginComponent } from './componentes/login/login.component';
+import { SignInComponent } from './componentes/sign-in/sign-in.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
     CrearCursosComponent,
     HomeComponent,
     ContactoComponent,
-    CursoComponent
+    CursoComponent,
+    NavbarComponent,
+    DashboardComponent,
+    LoginComponent,
+    SignInComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
