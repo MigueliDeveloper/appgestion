@@ -38,7 +38,6 @@ class Server{
         this.app.use('/api/tareas',routestareas)
         this.app.use('/api/usuarios', routesusuarios);
         this.app.use('/api/adminservices', routesadminservices);
-        this.app.use('/api/mensajes', routesmensajes);
     }
 
     middlewares() {
